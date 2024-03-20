@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html> //this is by me
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of weeks</title>
+</head>
+<body>
+    <h1>Arithmetic Operator <br> Number of weeks in a year</h1>
+    <script>
+let totaldays=365;
+var x= totaldays/7;
+var Day = totaldays%7;
+document.write(x + ' Weeeks and '+ Day +' Day is there in a year')
+
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width">
+    <title>Operators</title>
+</head>
+<body>
+    <h1>Arithmetic Operator</h1>
+    <h1>Number of weeks in a year</h1>
+    <script>var days = 365;
+    var week_days = 7;
+    var week = Math.trunc(days/week_days);
+     //divide Operation with trunc methodto remove digits after decimalvar 
+     remaining_days = days % week_days; //Modulo Operation
+     document.write(week + " Weeks and "+remaining_days+" Day is there in ayear");
+     </script>
+     </body>
+     </html>

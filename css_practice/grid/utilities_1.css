@@ -1,0 +1,28 @@
+:root {
+    --bgcolor:rgb(58, 53, 53);
+    --textcolor: #fff
+  }
+  
+  
+  .griditem_1{
+    padding:20px 20px;
+    border-radius: 10px;
+    background-color: var(--bgcolor);
+    font-size: x-large;
+   
+  }
+  .griditem_A{
+    border-radius: 10px;
+    background-color: var(--bgcolor);
+    font-size: x-large;
+    padding:20px 20px;
+    grid-column: 1/3;
+  }
+  .griditem_B{
+    border-radius: 10px;
+    background-color: var(--bgcolor);
+    font-size: x-large;
+    padding:20px 20px;
+   grid-row: 1/3;
+   grid-column: 3/4;
+  }

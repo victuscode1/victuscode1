@@ -1,0 +1,808 @@
+:root {
+  --active-color: #000000e6;
+  --passive-color: #00000099;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: rgb(232, 230, 230);
+}
+
+
+
+
+/* css for body of the website  */
+
+#content {
+  display: grid;
+  grid-template-columns: 16rem auto 18.75rem;
+  grid-template-areas: "left-panel middle-panel right-panel";
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1.5rem 6rem;
+}
+
+#left-panel {
+  grid-area: left-panel;
+  margin-bottom: 0.5rem;
+}
+
+#middle-panel {
+  grid-area: middle-panel;
+  margin-bottom: 0.5rem;
+}
+
+#right-panel {
+  grid-area: right-panel;
+  margin-bottom: 0.5rem;
+}
+
+.property {
+  background: white;
+  border: 1px solid #0000001a;
+  border-radius: 8px;
+  margin: 0rem 0.75rem;
+}
+/* css for navigation bar */
+
+header {
+  min-height: 3.5rem;
+  background: white;
+  border-bottom: 1px solid #0000001a;
+}
+
+#navigation-bar {
+  min-height: 3.5rem;
+  background: white;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navigation-bar > #logo > img {
+  width: 2.2rem;
+}
+
+#logo {
+  margin-right: 0.5rem;
+}
+
+#search-bar {
+  flex-basis: 26rem;
+  flex-shrink: 2;
+}
+
+#search-bar > input {
+  min-width: 2rem;
+  width: 15rem;
+  height: 33px;
+  border: 1px solid #00000005;
+  border-radius: 4px;
+  resize: horizontal;
+  font-size: 0.938rem;
+  padding: 0rem 0.5rem 0rem 1rem;
+  background: #eef3f8;
+}
+
+#search-icon {
+  display: none;
+}
+
+#navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 44rem;
+}
+
+.nav-icon {
+  color: var(--passive-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem;
+  cursor: pointer;
+}
+
+.nav-icon > i {
+  font-size: 1.25rem;
+  margin-bottom: 1px;
+}
+
+.nav-icon span {
+  font-size: 0.75rem;
+  margin-top: 1px;
+}
+
+.nav-icon > div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fa-caret-down {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
+
+#divider {
+  width: 1px;
+  height: 3rem;
+  margin: 0 -1rem;
+  background: #0000001a;
+}
+
+#premium > a {
+  width: 6rem;
+  display: flex;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #915907;
+}
+
+
+
+/* css for left panel */
+
+#background {
+  height: 3.6rem;
+  width: 14.4rem;
+  border-radius: 8px 8px 0px 0px;
+}
+
+#profile-pic {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  border: 1px solid #0000001a;
+  margin: -2.25rem 5.2rem 0 5.2rem;
+}
+
+#name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1.25rem 0 0.3rem 0;
+}
+
+#name:hover {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+#position {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--passive-color);
+  margin: 0.3rem 0 1.25rem 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+}
+
+#connections > span {
+  display: flex;
+  flex-direction: column;
+}
+
+#connections {
+  border-top: 1px solid #0000001a;
+  border-bottom: 1px solid #0000001a;
+}
+
+#connection-1 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  padding-bottom: 1px;
+}
+
+#connection-2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: 1px;
+}
+
+.fa-user-plus {
+  font-size: 1rem;
+  padding: 0 0.25rem;
+  cursor: pointer;
+}
+
+#promotion {
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #0000001a;
+}
+
+#promotion > span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  padding-bottom: 1px;
+}
+
+#promotion > a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: 1px;
+}
+
+#promotion > a:hover {
+  color: #915907;
+  cursor: pointer;
+}
+
+#my-items {
+  justify-content: flex-start;
+}
+
+.fa-bookmark {
+  font-size: 1rem;
+  color: var(--passive-color);
+  margin-right: 0.5rem;
+}
+
+#my-items > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.active, #name, #connection-2, #promotion > a, #my-items > span {
+  color: var(--active-color);
+}
+
+#my-topics {
+  margin-top: 0.375rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+}
+
+#links > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+#links > div > a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+#links > div > a:hover {
+  text-decoration: underline;
+}
+
+#links > div > i {
+  font-size: 1rem;
+  color: var(--passive-color);
+}
+
+#links > div > i:hover {
+  color: var(--active-color);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* media queries for responsiveness */
+
+/* @media only screen and (max-width: 1200px) {
+  #content {
+      grid-template-columns: 16rem 25rem 18.75rem;
+  }
+
+  #text-area {
+      width: 19rem;
+  }
+
+  #attachments > div > i {
+      margin-right: 0.25rem;
+  }
+
+  #attachments > div > span {
+      margin-left: 0.25rem;
+  }
+
+  .reaction-number {
+      flex-basis: 200px;
+  }
+
+  .comments-reposts {
+      width: 16.25rem;
+  }
+
+  #reaction-button > div {
+      padding: 1rem 1rem;
+  }
+
+  #post-pics  div {
+      width: 18rem;
+  }
+
+  #post-video > video {
+      height: 16rem;
+      width: 18rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+  #logo {
+      margin-right: 2rem;
+  }
+
+  .nav-icon span, #search-bar, #myself > div > i, #business > div > i {
+      display: none;
+  }
+
+  #search-icon {
+      display: flex;
+  }
+
+  #content {
+      grid-template-columns: 16rem 30rem;
+      grid-template-areas:
+      "left-panel middle-panel"
+      ".......... right-panel";
+  }
+
+  #text-area {
+      width: 23rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #divider, #business, #premium, #jobs, #notifications, #network, #messaging {
+      display: none;
+  }
+
+  #content {
+      grid-template-columns: 36rem;
+      grid-template-areas:
+      "left-panel"
+      "middle-panel"
+      "right-panel";
+  }
+} */
+
+
+/* css for middle panel */
+
+#post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#write-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem 1rem 0 1rem;
+}
+
+#write-post > img {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #0000001a;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+#text-area {
+  height: 3rem;
+  width: 31rem;
+  border: 1px solid #0000004d;
+  border-radius: 7.5rem;
+  outline: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.625rem 1rem;
+}
+
+#text-area:focus {
+  background: whitesmoke;
+}
+
+#attachments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.25rem 0;
+}
+
+#attachments > div {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+#attachments > div:hover {
+  background: whitesmoke;
+}
+
+#attachments > div > i {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+#photo {
+  color: #387fe9;
+}
+
+#video {
+  color: #5f9b41;
+}
+
+#event {
+  color: #c37d16;
+}
+
+#article {
+  color: #e16745;
+}
+
+#attachments > div > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  margin-left: 0.5rem;
+}
+
+
+
+/* css on horizontal divider */
+
+#horizontal-divider {
+  flex-basis: 30.875rem;
+  height: 1px;
+  background: #2020204d;
+  margin-right: 0.5rem;
+}
+
+
+
+/* css on user info */
+
+.user {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.75rem 1rem 0 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30.125rem;
+}
+
+.user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--active-color);
+}
+
+.user-name:hover {
+  color: #0a66c2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.user-followers {
+  margin: 0.125rem 0;
+}
+
+.user-followers, .posted-ago {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--passive-color);
+}
+
+.fa-ellipsis {
+  cursor: pointer;
+}
+
+.fa-circle {
+  font-size: 0.2rem;
+  font-weight: 600;
+  margin: 0 0.375rem;
+}
+
+.fa-earth-americas {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+#post-pics > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
+#post-2 {
+  margin-top: 0.5rem;
+}
+
+#myntra {
+  width: 3rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+#post-video {
+  display: flex;
+  align-items: center;
+}
+
+#post-video > video {
+  height: 20rem;
+  flex-basis: 36.5rem;
+}
+
+#reactions {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+
+
+
+.reaction-number, .comments, .reposts {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--passive-color);
+}
+
+.reaction-number {
+  display: flex;
+  margin-left: 0.25rem;
+  align-items: center;
+  flex-basis: 33.75rem;
+  justify-content: space-between;
+}
+
+.comments-reposts {
+  display: flex;
+  align-items: center;
+  flex-basis: 16rem;
+  justify-content: flex-end;
+}
+
+#divider-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divider-2 > div {
+  height: 1px;
+  flex-basis: 35rem;
+  background: #0000001a;
+}
+
+#reaction-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.25rem 0;
+}
+
+#reaction-button > div {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#reaction-button > div:hover {
+  cursor: pointer;
+  background: #e7e7e7;
+}
+
+#reaction-button > div > i {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  margin-right: 0.25rem;
+}
+
+#reaction-button > div > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--passive-color);
+}
+
+
+
+
+
+
+
+/* css for right panel */
+
+#news-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#news-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.75rem 0.75rem 0.75rem;
+}
+
+#news-heading > span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--active-color);
+}
+
+#news-heading > i:hover {
+  cursor: pointer;
+}
+
+#news > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0.75rem;
+}
+
+#news > div:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}
+
+.news-info {
+  display: flex;
+  align-items: center;
+}
+
+.news-info > i {
+  font-size: 0.375rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  margin-right: 0.5rem;
+}
+
+.news-info > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--active-color);
+}
+
+.reader-info {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 1rem;
+}
+
+.reader-info > i {
+  font-size: 0.25rem;
+  font-weight: 600;
+  color: var(--passive-color);
+  margin: 0 0.375rem;
+}
+
+.reader-info > span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--passive-color);
+}
+
+
+
+
+
+#follow-more {
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.companies > div > img {
+  width: 3rem;
+  margin: 0 0.5rem;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--active-color);
+}
+
+.company-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0a66c2;
+}
+
+
+
+.company-consumer {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--passive-color);
+}
+
+.follow-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-button {
+  border: 2px solid #0a66c2;
+  background: whitesmoke;
+  border-radius: 120px;
+  padding: 0.25rem 3rem;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+.follow-button > div > i, .follow-button > div > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0a66c2;
+}
+
+#company-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 0;
+}
+
+#company-divider > div {
+  flex-basis: 16rem;
+  height: 1px;
+  background: #0000001a;
+}
+
+
+

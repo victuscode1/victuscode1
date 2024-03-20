@@ -1,0 +1,30 @@
+.G{
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    
+    border: 2px;
+   grid-gap:10px ;
+    color: #fffefe;
+   
+
+
+}
+.G1{
+grid-column: 2/4;
+background-color: rgb(186, 182, 182);
+grid-area: 10px 10px;
+border-radius: 4px;
+padding: 20px;
+} 
+.G2 {
+    background-color: rgb(119, 112, 112);
+    border-radius: 4px;
+    padding: 20px;
+}
+.G3 {
+    background-color: rgb(119, 112, 112);
+    grid-column: 2/4;
+    border-radius: 4px;
+    padding: 20px;
+}

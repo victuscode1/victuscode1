@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section aside aside'
+            'footer footer footer footer';
+
+        }
+        .item {
+            border: 3px black solid;
+            background-color: aqua;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside {
+         grid-area :aside ;
+        }
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item" id="navbar">
+<a href="#">Home</a>
+<a href="#">Conatct</a>
+<a href="#">About Us</a>
+
+    </div>
+    <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta temporibus suscipit accusantium, tempora quod explicabo consequuntur error atque iste eligendi ut unde odio nemo assumenda nulla libero quibusdam fuga.</div>
+    <div id="aside" class="item">Lrrupti iste autem, ut dignissimos, optio qui excepturi laborum delectus! Soluta fuga laudantium dolores amet vero sequi officiis perspiciatis, unde, libero ullam ex commodi excepturi consequatur culpa?
+    Eveniet consectetur hic totam quidem ullam adipisci deserunt facere similique labore, dicta nostrum voluptatum. Sequi, laborum veritatis asperiores perspiciatis tempora voluptate reprehenderit delectus molestiae dolor? Quam nam optio accusamus earum!
+    Placeat labore distinctio laboriosam dolorum sequi rem error beatae temporibus aperiam, amet earum aut. Officia ab similique beatae, vel dolorum ratione delectus enim consequatur nostrum aliquid ipsa placeat corrupti assumenda.
+    Id at magnvoluptatem cum harum totam beatae ad quo, natus autem? Amet consequatur fuga eveniet aliquam illo maiores, provident quae minima repellendus minus officiis eaque, vel possimus dolore autem?
+    Porro officia ea harum qui beatae unde maxime, perspiciatis iste delectus consequuntur corrupti molestiae rem nisi quibusdam dolore quod eaque, laudantium sunt quas mollitia exercitationem possimus dolor. Cum, repellendus quibusdam.
+    Consectetur deleniti officia qui itaque iure laborum similique saepe voluptas facere aut dolore aliquid quam, beatae repellat sit est nihil, totam odio quos aspernatur! Adipisci blanditiis reprehenderit excepturi id quisquam?</div>
+<div id="footer"  class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos quae blanditiis voluptatibus molestiae soluta. Ducimus enim assumenda velit impedit iste quaerat doloribus quae inventore maiores incidunt, dolorem modi possimus.
+Cumque mollitia recusandae dolorem labore, ipsum saepe beatae, voluptatum, corrupti aut inventore suscipit officiis autem dolor? Excepturi, minima, quod modi corporis maxime corrupti nam ullam iste repellat perferendis ipsum libero.
+Quae placeat, volupe accusantium aperiam quo sunt. Laudantium, libero neque alias odit est, sit ipsum reprehenderit natus repellat dolore illo ullam perferendis? Qui asperiores tempora voluptatum quis rem!
+Harum, asperiores in, nisi blanditiis soluta quis natus omnis cum inventore explicabo cumque maiores nam magnam consequatur totam? Beatae nam tempora maiores earum voluptas accusamus vitae necessitatibus provident voluptatem repellendus.
+Nam nulla libero consequuntur at facilis? Accusamus, voluptatum, impedit rem non debitis iure repudiandae perferendis ea, reprehenderit deleniti voluptates. Expedita iste itaque corporis cupiditate deserunt perferendis porro non, natus in.</div></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.nav {
+    width:100vw;
+    background: #000;
+    overflow: hidden;
+}
+.nav a {
+    text-decoration: none;
+    color:white ;
+    float:left; 
+    display:block;
+    text-align: center;
+    font-size: 18px;
+    font-family:'popin';
+    padding: 20px ; 
+    border-bottom:5px solid transparent ;
+
+}
+.nav a:hover {
+    border-bottom-color: aqua;
+    color:rgb(255, 0, 238) ;
+    opacity: 0.9;
+}
+.nav a.active {
+    border-bottom: 5px solid rgb(1355, 209, 238);
+}

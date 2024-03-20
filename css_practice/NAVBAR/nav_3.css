@@ -1,0 +1,46 @@
+.nav{
+    background-color: #111;
+    height: 100%;
+    width: 120px;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    paddinSg: 20px;
+
+
+
+} .nav a {
+    display: block;
+    padding: 10px;
+    padding: 20PX;
+    text-decoration: NONE;
+    color: #ffffff;
+    font-family: 'poppins';
+    text-align: center;
+}
+.nav a:hover {
+    color:#18d1b8;
+}
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+ @media screen and  (max-height: 450px){
+    .nav {padding-top: 15px;}
+    .nav a {font-size:18px;}
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+

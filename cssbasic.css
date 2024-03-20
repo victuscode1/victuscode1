@@ -1,0 +1,17 @@
+h1{
+    font:230px;
+    transform-style: preserve-3d;
+}
+p{
+    color:aqua;
+
+}
+Dl{ font: 10px;
+color:blue;}
+th{
+    font:100;
+    font-style: oblique;
+}
+table {
+    font-weight:lighter;
+}

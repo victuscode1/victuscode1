@@ -1,0 +1,49 @@
+.nav {
+    width:250px ;
+}
+.nav a {
+    background-color: rgb(200, 199, 214); /* backgroumd color of the anchor tag chaange to red */
+    color: black; /* to make the tlink text black */
+    display: block; /* to make the verticle alignment of the block element */
+    padding: 10px; /* to show the text clearly at a space between them */
+    text-decoration: none; /*use to remove the ynderlined of the link */
+    border-color: rgb(58, 72, 72);
+   
+}
+.nav a:hover {
+    background-color: rgb(57, 161, 177);
+}
+
+.nav a.active {
+    background: #aa9404;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
