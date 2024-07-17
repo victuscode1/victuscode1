@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="styleQuiz.css">
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div class="container-H">
+    <image src="./image/logoTestbook.png" id="logo"></image>
+    <h1>Hello User</h1>
+    <h4>Enter your name to continue the Quiz</h4>
+    <h3 id="manDate"></h3>
+    <div class="AligN-Box">
+        <input required type="text" id="username" name="username" placeholder="ENTER YOUR Name..." class="textbox" >
+        <button onclick="submitUsername()">ENTER</button>
+    </div>
+    <P>You'll have 10 second to answer each question</P>
+    <hr>
+
+    <!-- Category Section -->
+    <div id="SelectTopic">
+        <h1> Select Category</h1>
+        <button  id="tp1" class="toPic" onclick="startQuiz('Pipes and Cisterns')">Pipes And Cistern</button>
+        <button  id="tp2" class="toPic" onclick="startQuiz('Probability')">Probality</button><br><br><br>
+        <button  id="tp3" class="toPic" onclick="startQuiz('Ages')" >Problem On Ages</button>
+        <button  id="tp4" class="toPic" onclick="startQuiz('Profit')">Profit And Loss</button>
+    </div>
+</div>
+
+
+
+ <!-- QuizPage -->
+<div class="container-Q" style="display: none;">
+    <div class="sub-container">
+        <p id="toPic-Name"></p>
+        <div id="time-ScorE">
+            <div id="timeR" class="circLe"></div> 
+            <div id="scoRe">SCORE: 0</div>
+        </div>
+        <div id="settingQNo">
+            <div id="qNo" class="circLe">Q1</div>
+            <div class="AligN-Box-Q">
+                <p id="quesTion"></p>
+            </div>
+        </div>
+        <div id="SelectTopic-Q">
+            <button id="oP1" onclick="checkAnswer(this)" class="toPic"></button>
+            <button id="oP2" onclick="checkAnswer(this)" class="toPic"></button>
+            <br><br>
+            <button id="oP3" onclick="checkAnswer(this)" class="toPic"></button>
+            <button id="oP4" onclick="checkAnswer(this)" class="toPic"></button>
+        </div>
+        <div class="btn-div">
+            <button class="btn-left" id="nextQuestion" onclick="loadNextQuestion()">Next</button>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Quiz Result Page -->
+  <div id="resultPage" style="display: none">
+    <!-- Result Details -->
+    <h2>Quiz Result</h2>
+    <p>Name: <span id="resultName"></span></p>
+    <p>Total Time Taken: <span id="resultTimeTaken"></span></p>
+    <p>Total Questions: <span id="totalQuestions">10</span></p>
+    <p>Attempted: <span id="attempted"></span></p>
+    <p>Correct Answers: <span id="correctAnswers"></span></p>
+    <p>Wrong Answers: <span id="wrongAnswers"></span></p>
+    <p>Score: <span id="scorePercentage"></span>%</p>
+    
+    <!-- Buttons -->
+    <div id="reSult"><button id="btn-g2h" onclick="startQuiz(selectedTopic)">Start Again</button>
+    <button id="btn-g2h" onclick="goToHome()">Go to Home</button></div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

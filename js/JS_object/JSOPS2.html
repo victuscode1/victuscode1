@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Objects Practice Code </title>
+        </head>
+        <body>
+            <h1>Output is in your console window</h1>
+            <script type="text/javascript">
+            4
+    var student =  {
+        Name : "Rahul Verma",
+        Class : "10th",
+        Rollno : 31,
+        Subject : 'English',
+        Marks : '34'
+        };
+        console.log(student);
+        alert(JSON.stringify(student, null, 4));
+        delete student.Class;
+        delete student.Rollno;
+        console.log(student);
+        alert(JSON.stringify(student, null, 4));
+        </script>
+        </body>
+        </html>

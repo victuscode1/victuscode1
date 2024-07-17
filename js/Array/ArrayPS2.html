@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Arrays Practice Code </title>
+        </head>
+        <body>
+            <script type="text/javascript">
+            const addresses = ["London", "Michigan", "Delhi", "Mumbai"];
+            function isLong(addr) {
+                return addr.length > 5;
+            }
+            const longer = addresses.filter(isLong);
+            document.write(longer + "<br>");
+            addresses.pop();
+            document.write(addresses);
+            alert(addresses.indexOf('Pune'));
+            alert(addresses.indexOf('Delhi'));
+            </script>
+            </body>
+            </html>

@@ -1,0 +1,19 @@
+root {
+    margin:0px;
+    padding: 0px
+}
+.nav1 {
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  background-color: aquamarine;
+
+}
+ a 
+ {
+    text-decoration: none;
+ }
+ div {
+    /* padding:auto; */
+    margin:auto;
+ }

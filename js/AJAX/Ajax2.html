@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AJAX introduction and Fetch Method Practice Code</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <style> 
+         body {
+            height:100%;
+            background-image:linear-gradient(toright,rgb(211,235,238),rgb(37, 169, 173));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+            }
+            </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Fetching and Displaying Data in Table...</h1>
+                    <table id="table" class="table"></table>
+                </div>
+                <script>
+                fetch('http://universities.hipolabs.com/search?country=United+States').then(res => res.json()).then(json => show(json))
+                 function show(universities) { 
+                    let table = document.getElementById('table');
+                    for (let i = 0; i < universities.length; i++) {
+                        let obj = universities[i];
+                        console.log(obj);
+                        let row = document.createElement('tr');
+                        let name = document.createElement ('td');
+                        let domains = document.createElement('td');
+                        let country = document.createElement('td');
+                        name.innerHTML=obj.name;
+                        domains.innerHTML=obj.domains;
+                        country.innerHTML=obj.country;
+                        row.appendChild(name)
+                        row.appendChild(domains)
+                        row.appendChild(country)
+                        table.appendChild(row)
+                        }
+                        }
+                        </script>
+                        </body>
+                        </html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Random Image Generator</title>
+        <style>
+        body {
+            height:100%;
+            background-image: linear-gradient(to right, rgb(161, 113, 209),rgb(18, 8, 85));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+        }
+        .container {
+            display:flex;
+            flex-direction: column;align-items:center;
+            justify-content: center;
+            }#image { 
+                width:350px;
+                height:350px;
+                border: 5px solid #fff;
+                box-sizing: border-box;
+                overflow: hidden;
+                }
+                </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <h1 style="text-align:center; color:azure;">Random ImageGenerator</h1>
+                        <img id="image"/>
+                    </div>
+                    <script>
+                    const url = 'https://source.unsplash.com/random'
+                    const img = document.getElementById("image");
+                    const getImage = async (url) => {
+                        return await fetch(url).then(res => res.url)
+                        }
+                        const img_url=getImage;
+                        getImage(url).then(result => {
+                            img.setAttribute('src', result)});
+                            </script>
+                            </body>
+                            </html>

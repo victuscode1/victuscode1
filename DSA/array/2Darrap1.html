@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Arrays Practice Code </title>
+        </head>
+        <body>
+            <script type="text/javascript">
+            const addresses = ["London", "Michigan", "Delhi", "Mumbai"];
+            for (let addr of addresses){
+                alert(addr);
+            }
+            var personnel = new Array ()
+            personnel [0] = new Array ()
+            personnel [0] [0] = "Rahul"
+            personnel [0] [1] = '18'
+            personnel [0][2] = 'London'
+            personnel[1] = new Array ()
+            personnel [1] [0] = "Sneha"
+            personnel [1] [1] = '17'
+            personnel [1][2] = 'Michigan'
+            personnel[2] = new Array ()
+            personnel [2][0] = "Raj"
+            personnel [2] [1] = '19'
+            personnel [2] [2] = 'Delhi'
+            document.write ("Name: " + personnel[1][0] + "<br>")
+            document.write ("Age: " + personnel [1] [1] + "<br>")
+            document.write ("Address: " + personnel[1][2] + "<br>")
+        </script>
+    </body>
+    </html> -->
+    
+   
+    <!-- //Problem Statement 2: -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>JS Arrays Practice Code </title>
+            </head>
+            <body>
+                <script type="text/javascript">
+                const addresses = ["London", "Michigan", "Delhi", "Mumbai"];
+                function isLong(addr) {
+                    return addr.length > 5;
+                }
+                const longer = addresses.filter(isLong);
+
+                document.write(longer + "<br>");
+                addresses.pop();
+                document.write(addresses);
+                alert(addresses.indexOf('Pune'));
+                alert(addresses.indexOf('Delhi'));
+                </script>
+                </body>
+                </html> 
+

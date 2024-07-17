@@ -1,0 +1,232 @@
+:root {
+    --text:greay
+    
+}
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    color: #FFFFF7 ;
+    background-color: #252529;
+    margin: 0;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+
+   /* creating navbar */
+   .n1{
+    position: fixed;
+   }
+   .nav1 {
+    background-color: rgb(64, 61, 61);
+    color: rgb(170, 90, 90);
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+
+   }
+   nav1:hover {
+    padding:20px;
+   }
+   .nav1:before, .nav1:after {
+    display: table;
+   }
+ul > li{
+    display: inline;
+    
+    text-decoration: none;
+    /* background-color: aqua; */
+    margin: 0px 20px;
+
+}
+nav a {
+    color:#FFFFF7 ;
+    text-decoration: none;
+
+}
+
+ /* PArt 1st overview  */
+
+.container{
+    width: 100vw;
+    height:1000px;
+    text-align: center;
+}
+ .x {
+    width: 100vw;
+    height: 1000px;
+    text-align: center;
+    margin:0px auto;
+    padding: 0 3rem;
+    background-image:url(https://www.hdwallpapers.in/download/black_acoustic_guitar_in_black_background_hd_black_background-HD.jpg);
+   background-repeat: no-repeat;
+   /* background-size: 1000px; */
+ }
+ #bigh1 {
+  
+    padding-top: 100px;
+    font-size: 70px;
+ }
+ #bigh2 {
+    padding:5px 70px 5px ;
+    font-size: 30px;
+    margin: 10px 30px;
+ }
+ .discrip1 {
+    font-size: 20px;
+    margin: 5px 80px;
+    padding: 20px;
+ }
+img {
+    width: 100%;
+}
+
+/* css for panel-y i.e MUSIC */
+
+#mus_h1, #mus_h2 {
+    padding-top:30px;
+}
+
+
+.discrip2 {
+    font-size: 20px;
+    margin: 5px 80px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#trial-button {
+    padding-top: 10px;
+    margin:0px auto;
+    background-color:#D3071B ;
+    width: 250px;
+    height: 60px;
+}
+#trial-button a {
+    text-decoration: none;
+    color: #f1ebeb;
+}
+
+.rdbtn{
+    background-color: blue;
+    height: 50px;
+    width: 200px;
+    margin:0px auto;
+    color: #F4F4F4;
+}
+.rdbtn a {
+    text-decoration: none;
+    color: #fff;
+}
+.Mphoto img {
+    height: 500px;
+    width: 900px;
+}
+/* css for video panel */
+
+.container-2{
+    width: 100vw;
+    height:1000px;
+    text-align: center;
+    background-color:#F4F4F4;
+    color: #333333;
+}
+.vh1 {
+    margin: 20px auto;
+    padding-top: 100px;
+    color:#403636;
+    font-size: 2rem;
+
+ }
+ .vh2{
+    margin: 20px auto;
+    padding-top: 100px;
+    color:#ebe5e5;
+    font-size: 2rem;
+ }
+.vp{
+    margin:10px 150px;
+    font-size: 1.3rem;
+    color:#5b4e4e;
+}
+.vp1{
+    
+    margin:10px 150px;
+    font-size: 1.3rem;
+    color:#f8f5f5;
+}
+
+.vid_photo {
+   align-self: center;
+   max-height: 600px;
+   max-width: 1200px;
+}
+
+.flat{
+    background-image:url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/01/11/venus-night-sky.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    max-height: 400px;
+    padding: 20px 0px;
+
+}
+ /* gift section */
+
+.gift-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    background-color: #f1ebeb;
+    color: rgb(112, 112, 117);
+}
+.gift-cards div h2 {
+    margin-top: 150px;
+}
+.container-3 
+{
+        padding: 2rem 0;
+}
+.contaner-3-1{
+    
+        max-width: 1180px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 3rem;}
+      
+   /* footer container */
+.footer{
+    width: 100vw;
+    height: 300px;
+}
+
+  .footer div ul {
+    text-decoration: none;
+    list-style: none;
+  }
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    color: #f1ebeb;
+}
+ul li a{
+    text-decoration: none;
+    color: #F4F4F4;
+}
+   /* footer bottom */
+   .ftb {
+margin-top: 50px;
+color: #fff;
+   }
+
+

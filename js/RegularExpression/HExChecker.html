@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Regular Expression Practice Code</title>
+</head>
+<body>
+    <script>function is_hexcolor(str){regexp = /^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+    if (regexp.test(str)){return true;
+    }
+    else {
+        return false;
+        }
+        }
+        console.log(is_hexcolor("#333")); // true
+        console.log(is_hexcolor("#7777")); // false</script></body></html>

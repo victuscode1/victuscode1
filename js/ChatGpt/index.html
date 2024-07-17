@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styleG.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage">
+        <!-- User Details Section -->
+        <div id="userDetails">
+            <img src="logo.png" alt="Logo"> <!-- Logo -->
+            <h2>Welcome to the Quiz App!</h2> <!-- Welcome Note -->
+            <input type="text" id="userName" placeholder="Enter your name"> <!-- Name Textbox -->
+            <button onclick="startQuiz()">Start Quiz</button> <!-- Start Quiz Button -->
+        </div>
+        <!-- Category Section -->
+        <div id="category">
+            <button onclick="startCategory('pipes')">Pipes and Cisterns</button>
+            <button onclick="startCategory('probability')">Probability</button>
+            <button onclick="startCategory('age')">Problems on Age</button>
+            <button onclick="startCategory('profit')">Profit and Loss</button>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" style="display: none;">
+        <!-- Timer and Score -->
+        <div id="timer">Timer: <span id="timeLeft"></span></div>
+        <div id="score">Score: <span id="userScore">0</span></div>
+        
+        <!-- Question Section -->
+        <div id="questionSection">
+            <h2 id="questionNumber">Question 1</h2>
+            <p id="questionText">Question text goes here</p>
+            <button id="option1" onclick="checkAnswer(this)">Option 1</button>
+            <button id="option2" onclick="checkAnswer(this)">Option 2</button>
+            <button id="option3" onclick="checkAnswer(this)">Option 3</button>
+            <button id="option4" onclick="checkAnswer(this)">Option 4</button>
+        </div>
+        
+        <!-- Next Question Button -->
+        <button id="nextQuestion" onclick="loadNextQuestion()">Next Question</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Quiz Result Page -->
+    <div id="resultPage" style="display: none;">
+        <!-- Result Details -->
+        <h2>Quiz Result</h2>
+        <p>Name: <span id="resultName"></span></p>
+        <p>Total Time Taken: <span id="totalTimeTaken"></span></p>
+        <p>Total Questions: <span id="totalQuestions"></span></p>
+        <p>Attempted: <span id="attempted"></span></p>
+        <p>Correct Answers: <span id="correctAnswers"></span></p>
+        <p>Wrong Answers: <span id="wrongAnswers"></span></p>
+        <p>Score: <span id="scorePercentage"></span>%</p>
+        
+        <!-- Buttons -->
+        <button onclick="startQuiz()">Start Again</button>
+        <button onclick="goToHome()">Go to Home</button>
+    </div>
+
+    <script src="./quiz.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>

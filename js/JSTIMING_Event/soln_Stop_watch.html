@@ -1,0 +1,52 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <linkhref="style.css"rel="stylesheet"type="text/css"/>
+    </head>
+    <style>
+        .wrapper, .card {
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+        .card {
+            width:400px;
+            height:300px;
+            background-color:#1c2333;
+            color:#ffffff;
+            border-radius:10px;
+        }
+        .timer {
+            font-size:50px
+        }
+        button{
+            background-color:orange;
+            color:#fff;
+            border:none;
+            border-radius:5px;
+            padding:10px15px;
+            cursor:pointer;
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="card">
+                <h1>Stopwatch</h1>
+                <p class="timer">
+                    <span id="seconds">00</span>:<spanid="milliseconds">00</span>
+                </p>
+                <div class="btn Wrapper">
+                    <button id="button-start">Start</button>
+                    <button id="button-stop">Stop</button>
+                    <button id="button-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./stop_watch.js">
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AJAX introduction and Fetch Method Practice Code</title>
+        <style>
+        body {
+            height:100%;
+            background-image:linear-gradient(toright,rgb(77,168,183),rgb(131, 120, 202));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+            }
+            </style>
+            </head>
+            <body>
+                <h1>Fetching Data...</h1>
+                <script>
+                fetch('https://dummyjson.com/products/1').then(res => res.json()).then(json => console.log(json))
+                </script>
+                </body>
+                </html>

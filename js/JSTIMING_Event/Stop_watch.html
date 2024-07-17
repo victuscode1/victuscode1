@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.wrapper, .card {
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .card {
+        width:400px;
+        height:300px;
+        background-color:#1c2333;
+        color:#ffffff;
+        border-radius:10px;
+    }
+    .timer {
+        font-size:50px
+    }
+    button {
+        background-color:orange;
+        color:#fff;
+        border:none;
+        border-radius:5px;
+        padding:10px15px;
+        cursor:pointer;
+    }
+    #main {
+        background-color: #1c2333;
+
+    }
+    #timeDisplay {
+        background-color: aqua;
+        height:200px;
+        width:300px;
+        margin: auto;
+    }
+    #btn {
+        margin-inline:290px;
+        margin-left: 330px;
+        display: inline-block;
+        
+    }
+    #timeDisplay {
+        display: flex;
+        gap: 20px;
+    }
+    #timeM, #timeS {
+        border: 2px solid black;
+        background-color: #1e51c9;
+        height: 150px;
+        width:150px;
+        margin: auto;
+    }
+    </style>
+</head>
+<body><div id="main">
+    <div id="timeDisplay">
+        <div id="timeM"></div>
+    <div id="timeS"></div>
+</div>
+    <Div id="btn">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+</Div>
+</div>
+    <script>
+var miN=0, Second=0;
+document.getElementsByID("timeM").innerHTML= "<h1>",miN,"</h2>";
+document.getElementsByID("timeS").innerHTML="<h1>",Second,"</h2>";
+    </script>
+</body>
+</html>

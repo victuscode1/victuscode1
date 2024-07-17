@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Regular Expression Practice Code</title>
+    </head>
+    <body>
+        <script>
+        let domain=window.prompt("Enter domain name","www.google.com");
+        function is_domain(str){
+            regexp = /^[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}$/i;
+        if (regexp.test(str))
+        {
+            return true;
+        }
+        else {
+             return false;
+            }
+            }
+            console.log(is_domain(domain));
+            </script>
+            </body>
+            </html>

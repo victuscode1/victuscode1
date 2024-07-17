@@ -1,0 +1,331 @@
+/* Resetting default browser styles */
+html, body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting base font size and family */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Setting container width and centering */
+.container-H {
+    margin: 50px 200px;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Adjust as needed */
+    background-color:#FFFFFF;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+ /* Home page */
+
+/* Setting textbox */
+.textbox {
+    display: inline-block;
+    margin-left: 300px;
+  
+    width: 500px; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.AligN-Box-H {
+    justify-content: center;
+    align-items: center; 
+}
+/* Styling headings */
+h1 {
+  
+    text-align: center;
+    color:#34aee8;
+}
+
+h4 {
+    
+    text-align: center;
+    
+}
+
+/* Styling paragraphs */
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Styling links */
+a {
+    color: #fdfefe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Styling buttons */
+
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border:2px solid#73C9F0;
+    border-radius: 4px;
+    background-color:#EBF9FF;
+    color: #B1A397;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #007bff;
+    color: aliceblue;
+}
+button a:hover {
+    background-color:#007bff;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+#btn-g2h {
+margin: 20px auto;
+}
+
+
+#reSult {
+    display: inline-block;
+}
+
+/* setting up the logo */
+#logo {
+    display: block;
+    height: 80px;
+    width:80px;
+    margin-top:80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div > p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+   
+
+
+
+/* adjusting the topic */
+
+#SelectTopic {
+   
+    text-align: center;
+    padding: 50px;
+    height: 30px;
+}
+.toPic {
+    width: 200px;
+    height:50px;
+    text-align: center;
+    border:2px solid#73C9F0;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+ /* Quiz Page */
+
+ .container-Q {
+    margin: 50px 200px;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Adjust as needed */
+    background-color:#FFFFFF;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+ /* setting quetion no div */
+ #settingQNo {
+     position: relative;
+ 
+ }
+ .AligN-Box-Q, #qNo {
+     position: absolute;
+ }
+ 
+ #qNo {
+     border: 2px solid #007bff;
+     height: 70px;
+     width: 70px;
+     text-align: center;
+     border-radius: 100%;
+     margin: 12px 528px;
+     background-color: #ffffff;
+     z-index: 2;
+ }
+ 
+ 
+ /* Question Box  */
+ .AligN-Box-Q {
+     justify-content: center;
+     align-items: center;
+     border: 2px solid #D2C4AE; 
+    width: 800px;
+    height: 150px;
+    /* margin: auto auto; */
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 10px;
+    z-index:1 ;
+    padding: 0;
+ }
+ 
+ 
+ /* Styling headings */
+ h1 {
+   
+     text-align: center;
+     color:#34aee8;
+ }
+ 
+ h4 {
+     
+     text-align: center;
+     
+ }
+ 
+ /* Styling paragraphs */
+ p {
+     margin-top: 1.5rem ;
+     font-size: 1rem;
+     margin-bottom: 1.5rem;
+ }
+ 
+ /* Styling links */
+ a {
+     color: #fdfefe;
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     text-decoration: underline;
+ }
+ 
+ /* Styling buttons */
+ button {
+     padding: 10px 20px;
+     background-color:  white;
+     color:#007bff;
+     border-radius: 4px;
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ button:hover {
+     background-color: #0071eadf;
+     color: #ffffff;
+ }
+ 
+ div > p {
+     padding-top: 20px;
+     text-align: center;
+    
+ }
+ 
+    
+ 
+ 
+ 
+ /* adjusting the option */
+ 
+ #SelectTopic-Q {
+    /* display: block; */
+     text-align: center;
+     padding-top: 250px;
+     height: 30px;
+ }
+
+
+ .toPic {
+     width: 200px;
+     height:50px;
+     text-align: center;
+     border:2px solid#73C9F0;
+     color: #007bff;
+     border-radius: 10px;
+ 
+ }
+ /* setting div inline */
+ #time-ScorE {
+     display: flex;
+     
+ }
+ 
+ 
+ #scoRe {
+     background-color: #34aee8;
+     border: none;
+     font-size: 1.5rem;
+     width: 125px ;
+     height: 50px;
+     margin: auto auto;
+     margin-right: 150px;
+    
+ }
+ 
+
+
+
+ /* Setting timer div */
+  
+ #timeR {
+     border: 2px solid #007bff;
+     height: 90px;
+     width: 150px;
+     text-align: center;
+     padding-top: 20px;
+     border-radius: 100%;
+     margin-left: 150px;
+ }
+ 
+ 
+ .btn-div {
+     margin:125px 295px ;
+    
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

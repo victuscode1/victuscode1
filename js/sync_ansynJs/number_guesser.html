@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Number Guesser</title>
+        <style>
+        body {
+            height:100%;
+            background-image: linear-gradient(to right, rgb(113, 196, 209),rgb(102, 89, 187));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+            }
+            </style>
+            </head>
+            <body>
+                <h1>Number Guesser</h1>
+                <script>
+                const enterNumber = () => {
+                    return new Promise((resolve, reject) => {
+                        const userNumber = Number(window.prompt("Enter a number (1 -15):")); // Ask the user to enter a number
+                     const randomNum = Math.floor(Math.random() * 15 + 1); // Pick a random number between 1 and 6
+                     if (isNaN(userNumber)) {
+                        reject(new Error("Wrong Input Type")); // If the user enter sa value that is not a number, run reject with an error
+                    }
+                    if (userNumber === randomNum) {
+                         // If the user's number matches the random number, return 2 score
+                          resolve({score: 2,randomNum,}); 
+                        } else if (userNumber === randomNum - 1 ||userNumber === randomNum + 1) { 
+                            // If the user's number is different than the randomnumber by 1, return 1 point
+                            resolve({score: 1,randomNum,});} 
+                            else {
+                                 // Else return 0 score
+                                 resolve({score: 0,randomNum,});
+                                }
+                            });
+                        };
+                        const continueGame = () => {
+                            return new Promise((resolve) => {
+                                if (window.confirm("Do you want to continue?")) {
+                                     // Ask ifthe user want to continue the game with a confirm modal
+                                     resolve(true);} else {resolve(false);
+                                    }});
+                                };
+                                const handleGuess = async () => {try {const result = await enterNumber();
+                                     // Instead of the then method, we can get the result directly by just putting await before the promise
+                                     alert(`Number: ${result.randomNum}: you got ${result.score}score`);
+                                     const isContinuing = await continueGame();
+                                     if (isContinuing) { handleGuess();
+                                    }
+                                     else {
+                                        alert("Game ends");
+                                    }
+                                }
+                                 catch (error) { // Instead of catch method, we can use the try, catch syntax
+                                    alert(error);
+                                    }
+                                    };
+                                    handleGuess(); // Run handleGuess function
+                                    </script></body></html>

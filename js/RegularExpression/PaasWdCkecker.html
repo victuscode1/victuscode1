@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Regular Expression Practice Code</title>
+</head>
+<body>
+    <script>
+        let password = prompt("Enter your password","12_345");
+        function passwordChecker(password) { 
+            regexp = /^[a-z0-9_\-]+$/i;
+            if (regexp.test(password)) { 
+                return true;
+                }
+                else {
+                    return false; 
+                    }
+                    }
+                    let value = passwordChecker(password);
+                    console.log(value);
+                    console.log(passwordChecker('100_23')); // true
+                    </script></body></html>

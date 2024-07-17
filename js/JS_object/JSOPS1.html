@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <title>JS Objects Practice Code </title>
+        </head>
+        <body>
+            <h1>Output is in your console window</h1>
+            <script type="text/javascript">function arr2obj(arr) {
+                // Create an empty object
+                let obj = {};
+                arr.forEach((v) => {
+                    // Extract the key and the value
+                    let key = v[0];
+                    let value = v[1];
+                    // Add the key and value to the new object
+                    obj[key] = value;
+                });
+                // Return the object
+                return obj;
+                }
+                console.log(arr2obj([["Ram","Burger" ],["Shyam", "Spring Rolls"],["Rahul", "Pizza"],["Neha", "Ice Cream"],]));
+                </script>
+                </body>
+                </html>

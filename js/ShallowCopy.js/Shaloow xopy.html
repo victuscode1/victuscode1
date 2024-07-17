@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+const original = {
+  name: 'John',
+  age: 30,
+  address: {
+    city: 'New York',
+    country: 'USA'
+  }
+};
+
+
+// Shallow clone using spread syntax
+const shallowClone = { ...original };
+
+// Deep clone using JSON.parse(JSON.stringify())
+const deepClone = JSON.parse(JSON.stringify(original));
+
+
+shallowClone.name = 'Jane';
+deepClone.address.city = 'Los Angeles';
+
+console.log(original);   
+console.log(shallowClone); 
+console.log(deepClone);
+console.log(shallowClone);
+</script>
+</body>
+</html>
+
+
+
