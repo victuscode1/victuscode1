@@ -6,6 +6,7 @@ let userDB = [] ;
 exports.getAllUser = (req, res) => {
     res.status (SUCCESS).json({
         staus: "success",
+        count : userDB.length,
         data: userDB,
     })
 };
@@ -17,6 +18,7 @@ exports.getUserById = (req, res) => {
         if (userDB[i].username == id) {
             res.status(SUCCESS).json({
                 status: "success",
+                
                 data: userDB[i],
             });
             return;
