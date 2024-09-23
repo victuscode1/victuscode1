@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  .Exercise5 h1 {
+    margin: 1rem;
+  }
+  .Exercise5 {
+    font-family: sans-serif;
+    border: 1px solid lavender;
+    width: 300px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: lavender;
+  }
+  
+  .Exercise5 .resetPasswordForm label {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .Exercise5 button {
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+    background-color: silver;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+  }
+  .Exercise5 .resetPasswordForm button[type="submit"] {
+    display: block;
+    margin-left: 0;
+  }
+  .Exercise5 .showhidebutton {
+    display: inline-block;
+    border: 1px solid grey;
+    background-color: rgb(243, 243, 243);
+    padding: 0.1rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  input {
+    margin-top: 1.5rem;
+    /* width: 180px; */
+    padding: 4px;
+    outline: none;
+  }
+  /* span{
+  border:1px solid;
+  margin: 2px;
+  padding: 5px;
+  } */
+  
